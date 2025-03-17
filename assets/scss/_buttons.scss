@@ -1,0 +1,80 @@
+
+@use "variables" as *;
+
+[class*="btn-"] {
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0.438rem 1.875rem;
+  text-align: center;
+  transition: 0.2s ease;
+  position: relative;
+  font-size: 1rem;
+  .btn-icon {
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 0.625rem;
+    top: auto;
+    bottom: auto;
+    svg, i {
+      transition: .5s ease;
+    }
+  }
+  &.loading {
+    pointer-events: none;
+    .btn-icon {
+      display: inline-block;
+      animation: spin-360 800ms ease-in-out infinite;
+    }
+    > .iconify {
+      display: none;
+    }
+  }
+  &:disabled {
+    background-color: $primary-color-accent;
+    cursor: not-allowed;
+  }
+  .iconify {
+    color: #fff;
+  }
+}
+.btn-primary {
+  background-color: $primary-color;
+  color: #fff;
+  &:hover {
+    background-color: $primary-color-dim;
+  }
+}
+.btn-default, .p-button.btn-default {
+  background-color: transparent;
+  color: $primary-color;
+  border: 0.0625rem solid $primary-color-accent;
+  &:hover {
+    background-color: $primary-color-accent;
+    color: #fff;
+  }
+}
+.btn-danger, .p-button.btn-danger {
+  background-color: $danger-color;
+  color: #fff;
+  &:hover {
+    background-color: $danger-color-dim;
+  }
+}
+.btn-warning, .p-button.btn-warning {
+  background-color: $warning-color;
+  color: #fff;
+  &:hover {
+    background-color: $warning-color-dim;
+  }
+}
+.btn-success, .p-button.btn-success {
+  background-color: $success-color;
+  color: #fff;
+  &:hover {
+    background-color: $success-color-dim;
+  }
+}

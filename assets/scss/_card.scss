@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem 4.313rem;
+  padding-bottom: 3.75rem;
+  box-shadow: 0rem 0.25rem 1rem 0rem #00000029;
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 2.313rem;
+  }
+  &.card-grey {
+    background-color: #F3F3F3;
+  }
+}

@@ -1,0 +1,14 @@
+.rtl {
+  .p-paginator {
+    .p-paginator-first, .p-paginator-last, .p-paginator-next, .p-paginator-prev  {
+      .icon, .p-icon {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .p-datepicker-header {
+    .p-icon {
+      transform: rotate(-180deg);
+    }
+  }
+}

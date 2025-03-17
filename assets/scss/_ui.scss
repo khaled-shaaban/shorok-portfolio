@@ -1,0 +1,107 @@
+@use "variables" as *;
+
+.has-error {
+  border: 0.0625rem solid $danger-color;
+  &:focus-within {
+    border: 0.0625rem solid $danger-color;
+    box-shadow: $input-box-shadow-danger;
+  }
+}
+
+.radius-0 {
+  border-radius: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.box-shadow-0 {
+  box-shadow: none;
+}
+
+.box-shadow-1 {
+  box-shadow: 0rem 0.25rem 1rem 0rem #00000029;
+}
+
+.text-shadow-1 {
+  text-shadow: 0rem 0.25rem 1rem 0rem #00000029;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.icon[severity="danger"] {
+  color: $danger-color;
+}
+
+.icon[severity="success"] {
+  color: $success-color;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.caption {
+  color: $text-color-3;
+  font-weight: lighter;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.overflow-x-auto {
+  overflow-x: auto
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+*[disabled="true"] {
+  color: $text-color-4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .p-toast-message {
+    width: 100vw;
+    margin: 1rem auto;
+  }
+}

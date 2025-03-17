@@ -1,0 +1,42 @@
+@keyframes spin-360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeScaleUp {
+  0% {
+    opacity: 0;
+    transform: sacle(0.7);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.1)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeTranslateUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeTranslateUpReverse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
